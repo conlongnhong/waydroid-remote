@@ -23,6 +23,7 @@ jobs:
             -project ios/WaydroidRemote/WaydroidRemote.xcodeproj \
             -scheme WaydroidRemote \
             -configuration Release \
+            -sdk iphoneos \
             -destination "generic/platform=iOS" \
             -archivePath build/WaydroidRemote.xcarchive \
             archive \
