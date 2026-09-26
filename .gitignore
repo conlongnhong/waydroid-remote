@@ -1,0 +1,7 @@
+build/
+DerivedData/
+*.xcarchive
+*.ipa
+.DS_Store
+__pycache__/
+kitty_iphone_tweak/

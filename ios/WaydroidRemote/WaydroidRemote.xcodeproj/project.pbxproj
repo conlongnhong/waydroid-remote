@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000100000000000000001 /* WaydroidRemoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000100000000000000001 /* WaydroidRemoteApp.swift */; };
+		A10000100000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000200000000000000002 /* ContentView.swift */; };
+		A10000100000000000000003 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000300000000000000003 /* Models.swift */; };
+		A10000100000000000000004 /* WaydroidAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000400000000000000004 /* WaydroidAPI.swift */; };
+		A10000100000000000000005 /* WaydroidViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000500000000000000005 /* WaydroidViewModel.swift */; };
+		A10000100000000000000011 /* ScrcpyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000100000000000000011 /* ScrcpyProtocol.swift */; };
+		A10000100000000000000012 /* CoordinateMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000100000000000000012 /* CoordinateMapper.swift */; };
+		A10000100000000000000013 /* H264Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000100000000000000013 /* H264Decoder.swift */; };
+		A10000100000000000000014 /* SampleBufferVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000100000000000000014 /* SampleBufferVideoView.swift */; };
+		A10000100000000000000015 /* TouchTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000100000000000000015 /* TouchTrackerView.swift */; };
+		A10000100000000000000016 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000100000000000000016 /* NetworkClient.swift */; };
+		A10000100000000000000017 /* ServerDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000100000000000000017 /* ServerDiscovery.swift */; };
+		A10000100000000000000018 /* HUDOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000100000000000000018 /* HUDOverlayView.swift */; };
+		A10000100000000000000019 /* VirtualKeyboardBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000100000000000000019 /* VirtualKeyboardBar.swift */; };
+		A1000010000000000000001A /* RemoteTouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000010000000000000001A /* RemoteTouchView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A20000100000000000000001 /* WaydroidRemoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaydroidRemoteApp.swift; sourceTree = "<group>"; };
+		A20000200000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A20000300000000000000003 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A20000400000000000000004 /* WaydroidAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaydroidAPI.swift; sourceTree = "<group>"; };
+		A20000500000000000000005 /* WaydroidViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaydroidViewModel.swift; sourceTree = "<group>"; };
+		A20000100000000000000011 /* ScrcpyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrcpyProtocol.swift; sourceTree = "<group>"; };
+		A20000100000000000000012 /* CoordinateMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateMapper.swift; sourceTree = "<group>"; };
+		A20000100000000000000013 /* H264Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H264Decoder.swift; sourceTree = "<group>"; };
+		A20000100000000000000014 /* SampleBufferVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleBufferVideoView.swift; sourceTree = "<group>"; };
+		A20000100000000000000015 /* TouchTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchTrackerView.swift; sourceTree = "<group>"; };
+		A20000100000000000000016 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		A20000100000000000000017 /* ServerDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDiscovery.swift; sourceTree = "<group>"; };
+		A20000100000000000000018 /* HUDOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDOverlayView.swift; sourceTree = "<group>"; };
+		A20000100000000000000019 /* VirtualKeyboardBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualKeyboardBar.swift; sourceTree = "<group>"; };
+		A2000010000000000000001A /* RemoteTouchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteTouchView.swift; sourceTree = "<group>"; };
+		A20000600000000000000006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20000700000000000000007 /* WaydroidRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaydroidRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A60000300000000000000003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A30000100000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A30000300000000000000003 /* WaydroidRemote */,
+				A30000200000000000000002 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A30000200000000000000002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A20000700000000000000007 /* WaydroidRemote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A30000300000000000000003 /* WaydroidRemote */ = {
+			isa = PBXGroup;
+			children = (
+				A20000100000000000000001 /* WaydroidRemoteApp.swift */,
+				A20000200000000000000002 /* ContentView.swift */,
+				A20000300000000000000003 /* Models.swift */,
+				A20000400000000000000004 /* WaydroidAPI.swift */,
+				A20000500000000000000005 /* WaydroidViewModel.swift */,
+				A20000100000000000000011 /* ScrcpyProtocol.swift */,
+				A20000100000000000000012 /* CoordinateMapper.swift */,
+				A20000100000000000000013 /* H264Decoder.swift */,
+				A20000100000000000000014 /* SampleBufferVideoView.swift */,
+				A20000100000000000000015 /* TouchTrackerView.swift */,
+				A20000100000000000000016 /* NetworkClient.swift */,
+				A20000100000000000000017 /* ServerDiscovery.swift */,
+				A20000100000000000000018 /* HUDOverlayView.swift */,
+				A20000100000000000000019 /* VirtualKeyboardBar.swift */,
+				A2000010000000000000001A /* RemoteTouchView.swift */,
+				A20000600000000000000006 /* Info.plist */,
+			);
+			path = WaydroidRemote;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A40000100000000000000001 /* WaydroidRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70000700000000000000007 /* Build configuration list for PBXNativeTarget "WaydroidRemote" */;
+			buildPhases = (
+				A60000100000000000000001 /* Sources */,
+				A60000200000000000000002 /* Resources */,
+				A60000300000000000000003 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaydroidRemote;
+			productName = WaydroidRemote;
+			productReference = A20000700000000000000007 /* WaydroidRemote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A50000100000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A40000100000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = A70000800000000000000008 /* Build configuration list for PBXProject "WaydroidRemote" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A30000100000000000000001;
+			productRefGroup = A30000200000000000000002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A40000100000000000000001 /* WaydroidRemote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A60000200000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A60000100000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000100000000000000001 /* WaydroidRemoteApp.swift in Sources */,
+				A10000100000000000000002 /* ContentView.swift in Sources */,
+				A10000100000000000000003 /* Models.swift in Sources */,
+				A10000100000000000000004 /* WaydroidAPI.swift in Sources */,
+				A10000100000000000000005 /* WaydroidViewModel.swift in Sources */,
+				A10000100000000000000011 /* ScrcpyProtocol.swift in Sources */,
+				A10000100000000000000012 /* CoordinateMapper.swift in Sources */,
+				A10000100000000000000013 /* H264Decoder.swift in Sources */,
+				A10000100000000000000014 /* SampleBufferVideoView.swift in Sources */,
+				A10000100000000000000015 /* TouchTrackerView.swift in Sources */,
+				A10000100000000000000016 /* NetworkClient.swift in Sources */,
+				A10000100000000000000017 /* ServerDiscovery.swift in Sources */,
+				A10000100000000000000018 /* HUDOverlayView.swift in Sources */,
+				A10000100000000000000019 /* VirtualKeyboardBar.swift in Sources */,
+				A1000010000000000000001A /* RemoteTouchView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A70000100000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WaydroidRemote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duong303.WaydroidRemote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A70000200000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WaydroidRemote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duong303.WaydroidRemote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A70000500000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WaydroidRemote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duong303.WaydroidRemote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A70000600000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WaydroidRemote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duong303.WaydroidRemote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A70000700000000000000007 /* Build configuration list for PBXNativeTarget "WaydroidRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70000500000000000000005 /* Debug */,
+				A70000600000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A70000800000000000000008 /* Build configuration list for PBXProject "WaydroidRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70000100000000000000001 /* Debug */,
+				A70000200000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A50000100000000000000001 /* Project object */;
+}

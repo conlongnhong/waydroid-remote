@@ -1,0 +1,43 @@
+name: Build Waydroid Remote IPA
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'ios/**'
+      - '.github/workflows/build-ipa.yml'
+
+jobs:
+  build-unsigned:
+    runs-on: macos-14
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Archive without signing
+        run: |
+          xcodebuild \
+            -project ios/WaydroidRemote/WaydroidRemote.xcodeproj \
+            -scheme WaydroidRemote \
+            -configuration Release \
+            -sdk iphoneos \
+            -archivePath build/WaydroidRemote.xcarchive \
+            archive \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO
+
+      - name: Package IPA artifact
+        run: |
+          mkdir -p build/Payload
+          cp -R build/WaydroidRemote.xcarchive/Products/Applications/WaydroidRemote.app build/Payload/
+          (cd build && zip -qry WaydroidRemote.ipa Payload)
+          rm -rf build/Payload
+
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: WaydroidRemote-unsigned
+          path: build/WaydroidRemote.ipa

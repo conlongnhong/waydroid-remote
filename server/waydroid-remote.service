@@ -1,0 +1,15 @@
+[Unit]
+Description=Waydroid Remote Touch & Video Streaming Service
+After=network.target waydroid-container.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/duong303/Documents/antigravity/máy ảo
+ExecStart=/usr/bin/python3 server/waydroid_touch_server.py --preset 1080p
+Restart=on-failure
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target
