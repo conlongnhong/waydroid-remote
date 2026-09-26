@@ -23,11 +23,12 @@ jobs:
             -project ios/WaydroidRemote/WaydroidRemote.xcodeproj \
             -scheme WaydroidRemote \
             -configuration Release \
-            -sdk iphoneos \
+            -destination "generic/platform=iOS" \
             -archivePath build/WaydroidRemote.xcarchive \
             archive \
-            CODE_SIGNING_ALLOWED=NO \
-            CODE_SIGNING_REQUIRED=NO
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO
 
       - name: Package IPA artifact
         run: |
